@@ -22,4 +22,10 @@ public class GameManager : MonoBehaviour
         string activeSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(activeSceneName);
     }
+
+    public void CangeScene(string nextScene)
+    {
+        SceneManager.LoadScene(nextScene);
+    }
+
 }
