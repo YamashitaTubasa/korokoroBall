@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class Goal : MonoBehaviour
 {
+    public GameObject clearText;
+    public GameObject nextButton;
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("ÉSÅ[Éã");
+
+        clearText.SetActive(true);
+        nextButton.SetActive(true);
     }
     // Start is called before the first frame update
     void Start()
